@@ -1,0 +1,746 @@
+body{
+    margin: 0;
+}
+
+.menu_bar{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/main-screen_bg.png);
+    background-repeat: no-repeat;  
+
+    /* background-size: 100%;
+    width: 100%; */
+
+    width: 1920px;
+    height: 960px;
+}
+
+.logo_img{
+    position: absolute;
+    margin: 40px 0 0 70px;
+    
+    /* margin: 20px 0 0 5%; */
+}
+
+.menu-main {
+    padding: 50px 280px 0 640px;
+
+    /* padding: 25px 7% 0 20%; */
+    float: left;
+}
+
+.menu-main_list{
+    list-style: none; 
+    white-space: nowrap;
+    padding-left: 0;
+    margin-top: 0;
+    background: transparent;
+}
+
+.menu-main_list :last-child { 
+    padding-right: 0;
+}
+
+.menu-main_items {
+    display: inline;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    padding-right: 50px;
+    box-sizing:padding-box;
+}
+
+.menu-main_items a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.login_button{
+    display:inline;
+    padding: 10px 30px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    margin: 40px 80px 0 0;
+    
+    /* margin: 20px 2% 0 0; */
+
+    /* margin-top: 40px;
+    margin-right: 80px; */
+    border: none;
+   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header_text{
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 140%;
+    color: #FFFFFF;
+    width: 920px;
+    height: 180px;
+    margin: 200px 0 0 312px;
+}
+
+.timer-bar{
+    padding: 50px 312px;
+}
+
+.timer-bar_day, .timer-bar_hour, .timer-bar_minute, .timer-bar_second {  
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    margin-right: 30px;
+    background: #121212;
+    text-align: center
+}
+
+.timer-bar_day_number{ 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    /* or 50px */
+    color: #FFFFFF;
+}
+
+.timer-bar_day_text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.header_bottom_bar{
+    background: #121212;
+    width: 1920px;
+    height: 130px;
+}
+
+.order_button{
+    margin: 40px 312px;
+    display: flex;   	
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    position: absolute;
+    width: 169px;
+    height: 44px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    /* text-align: center; */
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* margin: 0px 10px; */
+}
+
+.header_bottom_info_bar{ 	
+    /* background-color: black; */
+    display: inline-block;
+    width: 251px;
+    height: 58px;
+    margin: 30px 0 0 560px;
+}
+
+.header_bottom_info_bar_text{
+    margin-bottom: 10px;
+    float: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.header_bottom_info_bar_number{
+    float: right;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: white;
+}
+
+.header_bottom_progress{
+   /* display: inline; */
+   float: right;
+   margin: 30px 300px 0 0;
+}
+
+.header_bottom_progress_text, .header_bottom_progress_value_start, .header_bottom_progress_value_end{
+    float: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.header_bottom_progress_money{
+    margin-left: 30px;
+    display: inline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.header_bottom_progress_progress_bar{
+    width: 714px;
+    height: 6px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+.header_bottom_progress_progress_bar[value]::-webkit-progress-value {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+.header_bottom_progress_value_end{
+    float: right;
+}
+
+
+/* body */
+
+body{
+    background-image: url(../img/back.png);
+}
+
+
+    /* about */
+.about_block{
+    width: 1301px;
+    height: 542px;
+    margin: 200px 300px;
+}
+
+.about_block_image{
+    float: left;
+}
+
+.about_block_text{
+    float: right;
+}
+
+.about_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.about_description{
+    width: 636px;
+    height: 156px;
+    margin-top: 45px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+
+
+    /* quick start */
+.quick_start{
+    width: 1315px;
+    height: 552px;
+    margin: 200px 300px;
+}
+
+.quick_start_icon{
+    float: left;
+    width: 120px;
+    height: 120px;
+}
+
+.quick_start_title{
+    margin-left: 20px;
+    padding-top: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.quick_start_text{
+    width: 411px;
+    height: 52px;
+    margin-top: 25px;
+    margin-left: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.quick_start_progress{
+    margin-top: 80px;
+}
+
+.quick_start_progress_value_text{
+    display: inline;
+    margin-right: 235px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.quick_start_progress_value_grad{
+    /* width: 1296px; */
+}
+
+.quick_start_progress_value_grad_1, .quick_start_progress_value_grad_2, .quick_start_progress_value_grad_3, .quick_start_progress_value_grad_4{
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+.quick_start_progress_value_grad_1{ 
+    float: left;
+    width: 324px;
+    height: 80px;
+}
+
+.quick_start_progress_value_grad_2{
+    display: inline-flex;
+    transform:scaleX(-1);
+    margin-top: 8px;
+    width: 320px;
+    height: 60px;
+    margin-right: 0;
+}
+
+.quick_start_progress_value_grad_3{
+    display: inline-flex;
+    margin-bottom: 15px;
+    margin-left: -10px;
+    width: 300px;
+    height: 30px;
+}
+
+.quick_start_progress_value_grad_4{
+    display: inline-flex;
+    transform:scaleX(-1);
+    margin-bottom: 25px;
+    margin-left: -10px;
+    width: 324px;
+    height: 10px;
+}
+
+.quick_start_progress_description{
+    margin-top: 35px;
+    width: 1315px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.quick_start_progress_description_text{
+    display: inline-flex;
+    width: 300px;
+    height: 88px;
+    margin-right: 20px;
+}
+
+    /* job information */
+.job_information{
+    width: 1296px;
+    height: 549px;
+    margin: 200px 300px;
+}
+
+.job_information_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.job_information_icon{
+    margin: 130px 160px 0 165px;
+}
+
+.job_information_capture{
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 60px;
+    text-align: center;
+    width: 410px;
+    height: 68px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.job_information_text{
+    display: inline-block;
+    margin: 30px 35px 0 40px;
+    text-align: center;
+    width: 350px;
+    height: 105px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+    /* partners_block */
+
+.partners_block{
+    /* background-color: red; */
+    width: 1315px;
+    height: 487px;
+    margin: 200px 300px;
+}
+
+.partners_block_icon{
+    margin-top: -30px;
+    transform: rotate(180deg);
+    float: left;
+}
+
+.partners_block_title{
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.partners_table{
+    margin-top: 90px;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+.partners_table td {
+    padding: 30px 65px;
+    border: 1px solid #FFFFFF;
+}
+
+    /* education_program */
+
+.education_program{
+    margin: 150px 550px;
+    width: 750px;
+    height: 1117px;
+    align-items: center;
+}
+
+.education_program_block_icon{
+    margin: 0 auto;
+    width: 127px;
+    height: 127px;
+    transform: rotate(135deg);
+}
+
+.education_program_title{
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.education_program_text{
+    width: 411px;
+    height: 52px;
+    margin: 15px auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.education_program_weeks{
+    margin-top: 90px;
+    align-items: center;
+}
+
+.weeks{
+    width: 365px;
+    height: 95px;
+}
+
+.weeks_divider{
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+.weeks_number_1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: right;
+    margin-right: 70px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.weeks_description_1{
+    margin-right: 70px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.weeks_point_1{
+    margin-top: -50px;
+    width: 40px;
+    height: 0px;
+    float: right;
+    opacity: 0.3;
+    border: 1px solid #FFFFFF;
+    transform: rotate(180deg);
+}
+
+
+.weeks_number_2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: right;
+    margin-right: 230px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.weeks_description_2{
+    margin-left: 70px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.weeks_point_2{
+    margin-top: -50px;
+    width: 40px;
+    height: 0px;
+    float: left;
+    opacity: 0.3;
+    border: 1px solid #FFFFFF;
+    transform: rotate(180deg);
+}
+
+    /* teachers_block */
+
+.teachers_block{
+    margin: 170px 270px;
+    width: 1340px;
+    height: 620px;
+}
+
+.teachers_block_block_icon{
+    float: left;
+    width: 127px;
+    height: 127px;
+    transform: rotate(-45deg);
+}
+
+.teachers_block_title{
+    padding: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.teachers_info_block{
+    margin-top: 110px;
+}
+
+.teacher_block{
+    display: inline-block;
+    width: 420px;
+    height: 375px;
+}
+
+.teacher_icon{
+    /* margin: 0 auto; */
+    margin-left: 100px;
+    width: 190px;
+    height: 190px;
+}
+
+.teacher_name{
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF
+}
+
+.teacher_speciality{
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.teacher_biography_button_block{
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 25px;
+    width: 143px;
+    height: 44px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.teacher_biography_button{
+    background-color: transparent;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border: 0;
+}
+
+    /* footer */
+
+.footer_information_block{
+    width: 547px;
+    height: 419px;
+    margin: 200px 655px 30px;
+    /* background-color: red; */
+}
+
+.footer_information_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer_information_text{
+    margin: 30px auto;
+    width: 411px;
+    height: 52px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.footer_information_email_block{
+    margin-top: 60px;
+}
+
+.footer_information_email_input{
+    width: 353px;
+    height: 44px;
+    background: #FFFFFF;
+    opacity: 0.25;
+    border-radius: 50px 0px 0px 50px;
+    padding-left: 30px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.footer_information_email_button{
+    display: inline-block;
+    margin-left: -30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.social_media_block{
+    margin: 40px auto;
+    padding: 0 15%;
+}
+
+.social_media_icon{
+    margin-right: 40px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
