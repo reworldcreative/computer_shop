@@ -3,6 +3,7 @@ body {
     margin: 0;
     /* width: 100%; */
     background-image: url(../img/back.png);
+    background-color: black;
     display: flex;
     flex-direction: column;
 }
